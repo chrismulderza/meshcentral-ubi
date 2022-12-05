@@ -1,6 +1,9 @@
 # Meshcentral on UBI9
 
-## Mesh Central Container
+## Mesh Central container build
+
+My personal container build of the open source projects focused on remote management of devices, in particular
+for managing Intel(R) AMT devices. Used as part of my home lab build.
 
 ### Deploying
 
@@ -12,6 +15,10 @@ podman pull quay.io/rh_ee_cmulder/meshcentral-ubi
 
 ### Building
 
+
+### Running 
+
+- an example of runnning the container on Fedora using Podman: 
 
 ```bash
 podman run -it --publish 8443:8443 --publish 8080:8080 --publish 4433:4433 \
