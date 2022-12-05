@@ -1,5 +1,7 @@
 # Meshcentral on UBI9
 
+[![Docker Repository on Quay](https://quay.io/repository/rh_ee_cmulder/meshcentral-ubi/status "Docker Repository on Quay")](https://quay.io/repository/rh_ee_cmulder/meshcentral-ubi)
+
 ## Mesh Central container build
 
 My personal container build of the open source projects focused on remote management of devices, in particular
