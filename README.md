@@ -15,7 +15,7 @@ for managing Intel(R) AMT devices. Used as part of my home lab build.
 - Pull the container from [quay.io](https://quay.io) 
 
 ```bash
-podman pull quay.io/rh_ee_cmulder/meshcentral-ubi
+podman pull quay.io/rh_ee_cmulder/meshcentral-ubi:ubi7
 ```
 
 ### Building
@@ -23,13 +23,13 @@ podman pull quay.io/rh_ee_cmulder/meshcentral-ubi
 - Use a regular `podman build` to build this image
 
 ```bash
-podman build -t meshcentral-ubi -f Containerfile
+podman build -t meshcentral-ubi:ubi7 -f Containerfile
 ```
 
 - Push the image to Quay.io
 
 ```bash
-podman push meshcentral-ubi:latest quay.io/rh_ee_cmulder/meshcentral-ubi:latest
+podman push meshcentral-ubi:ubi7 quay.io/rh_ee_cmulder/meshcentral-ubi:ubi7
 ```
 
 
@@ -42,5 +42,5 @@ podman run -it --publish 8443:8443 --publish 8080:8080 --publish 4433:4433 \
   --volume ./data:/opt/meshcentral/meshcentral-data:Z,U \
   --name meshcentral \
   --env HOST_FQDN=meshcentral.example.com \
-  meshcentral-ubi:latest
+  meshcentral-ubi:ubi7
 ```
