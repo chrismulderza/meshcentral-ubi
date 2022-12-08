@@ -36,7 +36,7 @@ podman push meshcentral-ubi:latest quay.io/rh_ee_cmulder/meshcentral-ubi:latest
 
 ```bash
 podman run -it --publish 8443:8443 --publish 8080:8080 --publish 4433:4433 \
-  --volume ./data:/opt/meshcentral/meshcentral-data:Z,U \
+  --volume ./data:/opt/meshcentral/meshcentral-data:z \
   --name meshcentral \
   --env HOST_FQDN=meshcentral.example.com \
   meshcentral-ubi:latest
