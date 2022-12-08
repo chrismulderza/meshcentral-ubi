@@ -17,6 +17,18 @@ podman pull quay.io/rh_ee_cmulder/meshcentral-ubi
 
 ### Building
 
+- Use a regular `podman build` to build this image
+
+```bash
+podman build -t meshcentral-ubi -f Containerfile
+```
+
+- Push the image to Quay.io
+
+```bash
+podman push meshcentral-ubi:latest quay.io/rh_ee_cmulder/meshcentral-ubi:latest
+```
+
 
 ### Running 
 
