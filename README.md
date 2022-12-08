@@ -1,8 +1,11 @@
-# Meshcentral on UBI9
+# Meshcentral on UBI7
 
 [![Docker Repository on Quay](https://quay.io/repository/rh_ee_cmulder/meshcentral-ubi/status "Docker Repository on Quay")](https://quay.io/repository/rh_ee_cmulder/meshcentral-ubi)
 
 ## Mesh Central container build
+
+This branch tries to build Mesh Central on UBI7 and NodeJS14 in order to support running the container
+on older hardware that does not support the x86-64-v2 ABI.
 
 My personal container build of the open source projects focused on remote management of devices, in particular
 for managing Intel(R) AMT devices. Used as part of my home lab build.
